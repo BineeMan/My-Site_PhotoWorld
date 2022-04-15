@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Python для начинающих</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<a href = "index.html"><img src="images/p_logo11.png" width="700" height="200"
+	 hspace="100"></a>
+<div class = "column_button">
+	<a target="_blank" href="https://proglib.io/p/top-15-knig-po-python-ot-novichka-do-professionala-2020-04-07" class="button1">Книги по Pyhton</a>
+	<a href="https://www.python.org/downloads/" target="_blank" class="button1">Скачать Python 3</a>
+	<a href="https://www.jetbrains.com/ru-ru/pycharm/" target="_blank" class="button1">Скачать Pycharm</a>
+	<a href="https://ru.wikipedia.org/wiki/Python" target="_blank" class="button1">Статья в Википедии о Python</a>
+	<a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%BD_%D0%A0%D0%BE%D1%81%D1%81%D1%83%D0%BC,_%D0%93%D0%B2%D0%B8%D0%B4%D0%BE"
+	 target="_blank" class="button1">Создатель Python </a>
+</div>
+
+<div class = "column2">
+	<h1>Функции</h1>
+Как вы заметили, для каждой операции требуется свой собственный символ (оператор): для сложения чисел — +, для конкатенации строк — +, для деления чисел — /, и так далее. Такой подход оправдан только для самых частых операций, ведь в реальной жизни есть тысячи разных задач. К тому же, даже если бы язык программирования включал в себя тысячу разных операторов, в какой-то момент программисту понадобился бы новый.<br><br>
+
+Любой язык программирования позволяет расширять набор операций. Такие новые операции называются «функциями». Давайте сначала научимся пользоваться уже созданными функциями, а уже потом будем создавать новые функции.<br><br>
+
+В Python есть функция для возведения числа в какую-нибудь степень. Вызовем её:
+
+<div class="column_code">
+	<style type="text/css" scoped="scoped">.slgh,.slgh code,.slgh ul, .slgh ol{margin:0;padding:0;border:0;outline:0;background:none;text-align:left;float:none;vertical-align:baseline;position:static;left:auto;top:auto;right:auto;bottom:auto;height:auto;width:auto;line-height:1.1em;font-family:'Courier New', Courier, monospace;font-weight:normal;font-style:normal;font-size:1em;min-height:inherit;min-height:auto;}.slgh{background:#fff;width:99%;margin:1em 0;padding:1px;position:relative;overflow:auto;overflow-y:hidden;}.slgh ul{list-style:none;margin-left:.5em}.slgh ol{margin-left:3.5em}.slgh .bold {font-weight:bold;}.slgh .italic {font-style:italic;}.slgh .no-wrap li{white-space:pre;}.slgh li{padding-left:.5em;}.slgh li{border-left:3px solid #ccc;color:#666;}.slgh li.alt1{background:#fff;}.slgh li.alt2{background:#F8F8F8;}.slgh .plain, .slgh .plain a{color:#000;}.slgh .comments, .slgh .comments a{color:#008200;}.slgh .string, .slgh .string a{color:blue;}.slgh .keyword{color:#069;font-weight:bold;}.slgh .preprocessor {color:gray;}.slgh .variable{color:#a70;}.slgh .value{color:#090;}.slgh .functions{color:#ff1493;}.slgh .constants{color:#0066CC;}.slgh .script{background:yellow;}.slgh .color1,.slgh .color1 a{color:#808080;}.slgh .color2,.slgh .color2 a{color:#ff1493;}.slgh .color3,.slgh .color3 a{color:red;}.slghcr{margin:-.5em 1.2em}.slghcr a{color:#aaa;background:#fff;text-decoration:none;border-bottom:1px dotted #aaa;font-size:.6em;font-family:arial}</style><div id="hler_86438" class="slgh"><ol class="lines no-wrap"><li class="alt1"><code class="plain">result </code><code class="keyword">=</code> <code class="functions">pow</code><code class="plain">(</code><code class="value">2</code><code class="plain">, </code><code class="value">3</code><code class="plain">)&nbsp; </code><code class="comments"># 8</code></li></ol></div><div class="slghcr"></div>
+</div>
+
+Мы создали переменную <b>result</b> и указали интерпретатору записать в неё результат, который выдаст функция <b>pow</b>. Запись <b>pow(2, 3)</b> означает, что вызывается функция с именем pow и с аргументами (или с параметрами) 2 и 3. Вызванная функция вернула значение. <br><br>
+
+Аргументы — это информация, которую функция получает при вызове. Именно на основе этой информации функция, как правило, вычисляет что-то и выдает результат.<br><br>
+
+Функция <b>pow</b> возводит первое число в степень второго числа. В нашем примере мы возводили 2 в степень 3, поэтому в <b>result</b> в итоге оказалось значение 8.<br><br>
+
+Вызов функции всегда обозначается скобками (), идущими сразу за именем функции. В скобках может быть любое количество аргументов, а иногда — вообще ни одного. Количество зависит от выполняемой операции. Например, для нахождения модуля числа используется функция с именем a<b>bs</b>:<br><br>
+
+<div class="column_code">
+	<style type="text/css" scoped="scoped">.slgh,.slgh code,.slgh ul, .slgh ol{margin:0;padding:0;border:0;outline:0;background:none;text-align:left;float:none;vertical-align:baseline;position:static;left:auto;top:auto;right:auto;bottom:auto;height:auto;width:auto;line-height:1.1em;font-family:'Courier New', Courier, monospace;font-weight:normal;font-style:normal;font-size:1em;min-height:inherit;min-height:auto;}.slgh{background:#fff;width:99%;margin:1em 0;padding:1px;position:relative;overflow:auto;overflow-y:hidden;}.slgh ul{list-style:none;margin-left:.5em}.slgh ol{margin-left:3.5em}.slgh .bold {font-weight:bold;}.slgh .italic {font-style:italic;}.slgh .no-wrap li{white-space:pre;}.slgh li{padding-left:.5em;}.slgh li{border-left:3px solid #ccc;color:#666;}.slgh li.alt1{background:#fff;}.slgh li.alt2{background:#F8F8F8;}.slgh .plain, .slgh .plain a{color:#000;}.slgh .comments, .slgh .comments a{color:#008200;}.slgh .string, .slgh .string a{color:blue;}.slgh .keyword{color:#069;font-weight:bold;}.slgh .preprocessor {color:gray;}.slgh .variable{color:#a70;}.slgh .value{color:#090;}.slgh .functions{color:#ff1493;}.slgh .constants{color:#0066CC;}.slgh .script{background:yellow;}.slgh .color1,.slgh .color1 a{color:#808080;}.slgh .color2,.slgh .color2 a{color:#ff1493;}.slgh .color3,.slgh .color3 a{color:red;}.slghcr{margin:-.5em 1.2em}.slghcr a{color:#aaa;background:#fff;text-decoration:none;border-bottom:1px dotted #aaa;font-size:.6em;font-family:arial}</style><div id="hler_236990" class="slgh"><ol class="lines no-wrap"><li class="alt1"><code class="plain">result </code><code class="keyword">=</code> <code class="functions">abs</code><code class="plain">(</code><code class="keyword">-</code><code class="value">5</code><code class="plain">)&nbsp; </code><code class="comments"># 5</code></li><li class="alt2"><code class="plain">result </code><code class="keyword">=</code> <code class="functions">abs</code><code class="plain">(</code><code class="value">8</code><code class="plain">)&nbsp;&nbsp; </code><code class="comments"># 8</code></li></ol></div><div class="slghcr"></div>
+</div>
+Как видно, эта функция принимает один аргумент (часто говорят «параметр») и возвращает его модуль. А вот пример функции, которая не принимает аргументов:
+<div class="column_code">
+	<style type="text/css" scoped="scoped">.slgh,.slgh code,.slgh ul, .slgh ol{margin:0;padding:0;border:0;outline:0;background:none;text-align:left;float:none;vertical-align:baseline;position:static;left:auto;top:auto;right:auto;bottom:auto;height:auto;width:auto;line-height:1.1em;font-family:'Courier New', Courier, monospace;font-weight:normal;font-style:normal;font-size:1em;min-height:inherit;min-height:auto;}.slgh{background:#fff;width:99%;margin:1em 0;padding:1px;position:relative;overflow:auto;overflow-y:hidden;}.slgh ul{list-style:none;margin-left:.5em}.slgh ol{margin-left:3.5em}.slgh .bold {font-weight:bold;}.slgh .italic {font-style:italic;}.slgh .no-wrap li{white-space:pre;}.slgh li{padding-left:.5em;}.slgh li{border-left:3px solid #ccc;color:#666;}.slgh li.alt1{background:#fff;}.slgh li.alt2{background:#F8F8F8;}.slgh .plain, .slgh .plain a{color:#000;}.slgh .comments, .slgh .comments a{color:#008200;}.slgh .string, .slgh .string a{color:blue;}.slgh .keyword{color:#069;font-weight:bold;}.slgh .preprocessor {color:gray;}.slgh .variable{color:#a70;}.slgh .value{color:#090;}.slgh .functions{color:#ff1493;}.slgh .constants{color:#0066CC;}.slgh .script{background:yellow;}.slgh .color1,.slgh .color1 a{color:#808080;}.slgh .color2,.slgh .color2 a{color:#ff1493;}.slgh .color3,.slgh .color3 a{color:red;}.slghcr{margin:-.5em 1.2em}.slghcr a{color:#aaa;background:#fff;text-decoration:none;border-bottom:1px dotted #aaa;font-size:.6em;font-family:arial}</style><div id="hler_301386" class="slgh"><ol class="lines no-wrap"><li class="alt1"><code class="plain">result </code><code class="keyword">=</code> <code class="functions">str</code><code class="plain">()&nbsp; </code><code class="comments"># ''</code></li></ol></div><div class="slghcr"></div>
+</div>
+Функция <b>str</b> возвращает пустую строку, если вызвана без аргумента.<br><br>
+
+Но математические операции — капля в море по сравнению со всем многообразием функций. Мощь в том, что вы можете создавать собственные функции — мы займёмся этим в следующем модуле. Любое действие, которое вы себе можете вообразить, в программировании представлено функциями.
+
+</div>
+
+
+<div class = "column3">
+	<h2> Новости из мира Python </h2>
+	<ul>
+		<li><a target="_blank" href = "https://vc.ru/s/welltory/323936-senior-python-developer-dsl">Senior Python Developer (DS)<br></a></li>
+		<li><a target="_blank" href = "https://vc.ru/s/welltory/323850-senior-python-developer">Senior Python Developer в команду Newsfeed<br></a></li>
+		<li><a target="_blank" href = "https://vc.ru/newtechaudit/326581-kornia-python-biblioteka-dlya-obrabotki-izobrazheniy-v-zadachah-cv">Kornia - Python библиотека для обработки изображений<br> </a></li>
+		<li><a target="_blank" href = "https://tproger.ru/events/intensiv-chat-bot-s-iskusstvennym-intellektom-na-python-11/">Интенсив «Чат-бот с искусственным интеллектом на Python»<br></a></li>
+		<li><a target="_blank" href = "https://tproger.ru/events/intensiv-chat-bot-s-iskusstvennym-intellektom-na-python-11/">Python: The Programming and Development Language of the Future<br></a></li>
+		<li><a target="_blank" href = "https://www.nature.com/articles/d41586-021-03628-7">Python power-up: new image tool visualizes complex data<br></a></li>
+		<li><a target="_blank"href = "https://www.securitylab.ru/news/527449.phpl">PyPI отключил три вредоносных пакета с почти 15 тыс. скачиваний<br></a></li>
+		<li><a target="_blank" href = "https://www.cnews.ru/news/line/2021-12-13_vtb_lizing_planiruet_uvelichit">ВТБ Лизинг планирует увеличить штат IT-специалистов на 50%<br></a></li>
+	</ul>
+</div>
+
+<div class = "column_bottom">
+2021-2021. All rights reserved.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+body {
+  font-family: Arial, Verdana,  sans-serif; /* Семейство шрифтов */
+  font-size: 11pt; /* Размер основного шрифта в пунктах  */
+  background: linear-gradient(to bottom, white, #B0C4DE);
+  color: #C4E1DE; /* Цвет основного текста */
+}
+h1 {
+  color: #a52a2a; /* Цвет заголовка */
+  font-size: 24pt; /* Размер шрифта в пунктах */
+  font-family: Georgia, Times, serif; /* Семейство шрифтов */
+  font-weight: normal; /* Нормальное начертание текста  */
+  border-bottom: 1px solid currentColor;
+  text-align: center;
+  color: black;
+}
+
+h2 {
+  color: #a52a2a; /* Цвет заголовка */
+  font-size: 13pt; /* Размер шрифта в пунктах */
+  font-family: Georgia, Times, serif; /* Семейство шрифтов */
+  font-weight: normal; /* Нормальное начертание текста  */
+  border-bottom: 1px solid currentColor;
+  text-align: center;
+  color: black;
+}
+
+h3 {
+  color: #a52a2a; /* Цвет заголовка */
+  font-size: 20pt; /* Размер шрифта в пунктах */
+  font-family: Georgia, Times, serif; /* Семейство шрифтов */
+  font-weight: normal; /* Нормальное начертание текста  */
+  text-align: center;
+  color: black;
+}
+
+h4 {
+  color: #a52a2a; /* Цвет заголовка */
+  font-size: 20pt; /* Размер шрифта в пунктах */
+  font-family: Georgia, Times, serif; /* Семейство шрифтов */
+  font-weight: normal; /* Нормальное начертание текста  */
+  text-align: center;
+  border-bottom: 1px solid currentColor;
+  border-top: 1px solid currentColor;
+  color: black;
+}
+
+a:link {
+    color: gray; /* Цвет ссылок */
+   }
+   a:visited {
+    color: gray; /* Цвет посещенных ссылок */
+   }
+   a:active {
+    color: black; /* Цвет активных ссылок */
+   }
+.c1 {
+	color: blue;
+	}
+.column {
+	-webkit-column-width: 100px;
+	-webkit-column-count: 4;
+	-webkit-column-gap: 10px;
+	column-rule: 4px solid White;
+   }
+
+.column2 {
+
+	width: 1000px;
+  background: white;
+  padding: 5px;
+  padding-right: 20px;
+  padding-bottom: 300px;
+  padding-left: 25px;
+  margin-left:200px;
+  float: middle;
+	color: #5e5e5e; /* Цвет основного текста */
+	font-family: Times New Roman;
+	font-size: 16pt;
+	line-height: 1.5;
+  position: relative;
+  top: 60px;
+  left: auto;
+}
+
+.column_bottom {
+	width: 1000px;
+  background: #505050;
+  padding: 5px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  margin-left:200px;
+  float: middle;
+	color: #878787; /* Цвет основного текста */
+	font-family: Times New Roman;
+	font-size: 16pt;
+	line-height: 1.5;
+  position: relative;
+  top: auto;
+  left: auto;
+}
+
+.column3 {
+	width: 400px;
+  background: white;
+  padding: 5px;
+  padding-right: 20px;
+	margin-left:1300px;
+  float: middle;
+	color: #5e5e5e; /* Цвет основного текста */
+	font-family: Times New Roman;
+	font-size: 14pt;
+	line-height: 1.5;
+  position: absolute;
+  top: 320px;
+  left: 5px;
+  line-height: 1.5;
+}
+
+.column_button {
+	width: 1000px;
+  height: 31px;
+  background: #00BFFF;
+  padding: 5px;
+  padding-right: 520px;
+  padding-top: 13px;
+	margin-left:200px;
+  float: middle;
+}
+
+.column_console {
+  font-family: Consolas;
+	width: 940px;
+  background: #323232;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left:20px;
+  float: middle;
+	color: #a9b7c6; /* Цвет основного текста */
+	font-size: 16pt;
+	line-height: 1.5;
+  padding-left: px; /* Расстояние от линии до текста */
+  border-right: 3px solid #ffffff;
+  border-radius: 10px
+}
+
+.column_code {
+  font-family: Consolas;
+	width: 940px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left:20px;
+  float: middle;
+	color: #a9b7c6; /* Цвет основного текста */
+	font-size: 16pt;
+	line-height: 1.5;
+  border: 3px solid #C0C0C0;
+  border-radius: 10px
+}
+
+.thumb img  {
+    border: 2px solid White; /* Рамка вокруг фотографии */
+    padding: 15px; /* Расстояние от картинки до рамки */
+    background: #666; /* Цвет фона */
+    margin-left: 50px; /* Отступ справа */
+    margin-right: 170px; /* Отступ справа */
+    margin-bottom: 10px; /* Отступ снизу */
+   }
+
+a.button1 {
+  font-weight: 900;
+	color: white;
+	text-decoration: none;
+	padding: .8em 1em calc(.8em + 3px);
+	background: #00BFFF;
+	transition: 0.2s;
+}
+a.button1:hover { background: #00a5dc; }
+a.button1:active {
+  background: #0082ad);
+}
+
+ul {
+    list-style-image: url(images/p_logo_s2.png);
+}
+
+ol.list_code {
+  color: #606366;
+  text-indent: 30px;
+}
+
+.letter {
+   color: red; /* Цвет символа */
+   font-size: 200%; /* Размер шрифта */
+}
+b {
+  color: #C71585;
+}

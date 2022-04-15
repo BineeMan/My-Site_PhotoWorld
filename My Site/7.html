@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title>Цикл For</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<a href = "index.html"><img src="images/p_logo11.png" width="700" height="200"
+	 hspace="100"></a>
+<div class = "column_button">
+	<a target="_blank" href="https://proglib.io/p/top-15-knig-po-python-ot-novichka-do-professionala-2020-04-07" class="button1">Книги по Pyhton</a>
+	<a href="https://www.python.org/downloads/" target="_blank" class="button1">Скачать Python 3</a>
+	<a href="https://www.jetbrains.com/ru-ru/pycharm/" target="_blank" class="button1">Скачать Pycharm</a>
+	<a href="https://ru.wikipedia.org/wiki/Python" target="_blank" class="button1">Статья в Википедии о Python</a>
+	<a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%BD_%D0%A0%D0%BE%D1%81%D1%81%D1%83%D0%BC,_%D0%93%D0%B2%D0%B8%D0%B4%D0%BE"
+	 target="_blank" class="button1">Создатель Python </a>
+</div>
+
+<div class = "column2">
+<h1>Цикл For</h1>
+
+Цикл <b>while</b> – это основной цикл в Python, но не единственный.<br><br>
+
+Существует также цикл <b>for</b>. Он перебирает все элементы объекта, который ему передали. Циклу <b>for</b> не нужен счётчик. Он сам знает, когда необходимо остановиться и закончить работу. Такая магия возможна, благодаря особому устройству объектов, по которым совершается итерация. Подробно эта тема рассматривается в наших курсах на Хекслете. Сейчас достаточно знать, что строка является таким объектом и подходит для обработки циклом for.<br><br>
+
+Посмотрим реализацию переворота строки через цикл <b>for</b>:<br><br>
+<div class="column_code">
+	<style type="text/css" scoped="scoped">.slgh,.slgh code,.slgh ul, .slgh ol{margin:0;padding:0;border:0;outline:0;background:none;text-align:left;float:none;vertical-align:baseline;position:static;left:auto;top:auto;right:auto;bottom:auto;height:auto;width:auto;line-height:1.1em;font-family:'Courier New', Courier, monospace;font-weight:normal;font-style:normal;font-size:1em;min-height:inherit;min-height:auto;}.slgh{background:#fff;width:99%;margin:1em 0;padding:1px;position:relative;overflow:auto;overflow-y:hidden;}.slgh ul{list-style:none;margin-left:.5em}.slgh ol{margin-left:3.5em}.slgh .bold {font-weight:bold;}.slgh .italic {font-style:italic;}.slgh .no-wrap li{white-space:pre;}.slgh li{padding-left:.5em;}.slgh li{border-left:3px solid #ccc;color:#666;}.slgh li.alt1{background:#fff;}.slgh li.alt2{background:#F8F8F8;}.slgh .plain, .slgh .plain a{color:#000;}.slgh .comments, .slgh .comments a{color:#008200;}.slgh .string, .slgh .string a{color:blue;}.slgh .keyword{color:#069;font-weight:bold;}.slgh .preprocessor {color:gray;}.slgh .variable{color:#a70;}.slgh .value{color:#090;}.slgh .functions{color:#ff1493;}.slgh .constants{color:#0066CC;}.slgh .script{background:yellow;}.slgh .color1,.slgh .color1 a{color:#808080;}.slgh .color2,.slgh .color2 a{color:#ff1493;}.slgh .color3,.slgh .color3 a{color:red;}.slghcr{margin:-.5em 1.2em}.slghcr a{color:#aaa;background:#fff;text-decoration:none;border-bottom:1px dotted #aaa;font-size:.6em;font-family:arial}</style><div id="hler_3173" class="slgh"><ol class="lines no-wrap"><li class="alt1"><code class="keyword">def</code> <code class="plain">reverse(string):</code></li><li class="alt2">&nbsp;&nbsp;&nbsp;&nbsp;<code class="plain">result </code><code class="keyword">=</code> <code class="plain">''</code></li><li class="alt1">&nbsp;&nbsp;&nbsp;&nbsp;<code class="keyword">for</code> <code class="plain">char </code><code class="keyword">in</code> <code class="plain">string:</code></li><li class="alt2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="plain">result </code><code class="keyword">=</code> <code class="plain">char </code><code class="keyword">+</code> <code class="plain">result</code></li><li class="alt1">&nbsp;&nbsp;&nbsp;&nbsp;<code class="keyword">return</code> <code class="plain">result</code></li><li class="alt2">&nbsp;</li><li class="alt1">&nbsp;</li><li class="alt2"><code class="plain">reverse(</code><code class="string">'go!'</code><code class="plain">)&nbsp; </code><code class="comments"># '!og'</code></li></ol></div><div class="slghcr"></div>
+</div>
+
+В переменную <b>char</b> кладётся очередное значение на каждом шаге итерации. Имя этой переменной может быть любым.<br><br>
+
+Можно читать так: для каждого символа строки повторить операцию конкатенации.<br><br>
+
+В определении цикла <b>for</b> нет ни счётчика ни условия выхода из него. Он не знает заранее, какое количество итераций будет совершено.<br><br>
+
+<h3>Задание</h3>
+В одном из предыдущих уроков мы уже написали функцию <b>filter_string()</b>. Напомним, она принимает на вход строку и символ и возвращает новую строку, в которой удалён переданный символ во всех его позициях. На этот раз реализуйте эту функцию с помощью цикла <b>for</b>. Дополнительное условие: регистр исключаемого символа не имеет значения.<br><br>
+Пример вызова:
+<div class="column_code">
+	<style type="text/css" scoped="scoped">.slgh,.slgh code,.slgh ul, .slgh ol{margin:0;padding:0;border:0;outline:0;background:none;text-align:left;float:none;vertical-align:baseline;position:static;left:auto;top:auto;right:auto;bottom:auto;height:auto;width:auto;line-height:1.1em;font-family:'Courier New', Courier, monospace;font-weight:normal;font-style:normal;font-size:1em;min-height:inherit;min-height:auto;}.slgh{background:#fff;width:99%;margin:1em 0;padding:1px;position:relative;overflow:auto;overflow-y:hidden;}.slgh ul{list-style:none;margin-left:.5em}.slgh ol{margin-left:3.5em}.slgh .bold {font-weight:bold;}.slgh .italic {font-style:italic;}.slgh .no-wrap li{white-space:pre;}.slgh li{padding-left:.5em;}.slgh li{border-left:3px solid #ccc;color:#666;}.slgh li.alt1{background:#fff;}.slgh li.alt2{background:#F8F8F8;}.slgh .plain, .slgh .plain a{color:#000;}.slgh .comments, .slgh .comments a{color:#008200;}.slgh .string, .slgh .string a{color:blue;}.slgh .keyword{color:#069;font-weight:bold;}.slgh .preprocessor {color:gray;}.slgh .variable{color:#a70;}.slgh .value{color:#090;}.slgh .functions{color:#ff1493;}.slgh .constants{color:#0066CC;}.slgh .script{background:yellow;}.slgh .color1,.slgh .color1 a{color:#808080;}.slgh .color2,.slgh .color2 a{color:#ff1493;}.slgh .color3,.slgh .color3 a{color:red;}.slghcr{margin:-.5em 1.2em}.slghcr a{color:#aaa;background:#fff;text-decoration:none;border-bottom:1px dotted #aaa;font-size:.6em;font-family:arial}</style><div id="hler_873534" class="slgh"><ol class="lines no-wrap"><li class="alt1"><code class="plain">text </code><code class="keyword">=</code> <code class="string">'If I look forward I am win'</code></li><li class="alt2"><code class="plain">filter_string(text, </code><code class="string">'i'</code><code class="plain">)&nbsp; </code><code class="comments"># 'f&nbsp; look forward&nbsp; am wn'</code></li><li class="alt1"><code class="plain">filter_string(text, </code><code class="string">'O'</code><code class="plain">)&nbsp; </code><code class="comments"># 'If I lk frward I am win'</code></li></ol></div><div class="slghcr"></div>
+</div>
+
+</div>
+
+
+<div class = "column3">
+	<h2> Новости из мира Python </h2>
+	<ul>
+		<li><a target="_blank" href = "https://vc.ru/s/welltory/323936-senior-python-developer-dsl">Senior Python Developer (DS)<br></a></li>
+		<li><a target="_blank" href = "https://vc.ru/s/welltory/323850-senior-python-developer">Senior Python Developer в команду Newsfeed<br></a></li>
+		<li><a target="_blank" href = "https://vc.ru/newtechaudit/326581-kornia-python-biblioteka-dlya-obrabotki-izobrazheniy-v-zadachah-cv">Kornia - Python библиотека для обработки изображений<br> </a></li>
+		<li><a target="_blank" href = "https://tproger.ru/events/intensiv-chat-bot-s-iskusstvennym-intellektom-na-python-11/">Интенсив «Чат-бот с искусственным интеллектом на Python»<br></a></li>
+		<li><a target="_blank" href = "https://tproger.ru/events/intensiv-chat-bot-s-iskusstvennym-intellektom-na-python-11/">Python: The Programming and Development Language of the Future<br></a></li>
+		<li><a target="_blank" href = "https://www.nature.com/articles/d41586-021-03628-7">Python power-up: new image tool visualizes complex data<br></a></li>
+		<li><a target="_blank"href = "https://www.securitylab.ru/news/527449.phpl">PyPI отключил три вредоносных пакета с почти 15 тыс. скачиваний<br></a></li>
+		<li><a target="_blank" href = "https://www.cnews.ru/news/line/2021-12-13_vtb_lizing_planiruet_uvelichit">ВТБ Лизинг планирует увеличить штат IT-специалистов на 50%<br></a></li>
+	</ul>
+</div>
+
+<div class = "column_bottom">
+2021-2021. All rights reserved.
+</div>
+
+</body>
+</html>

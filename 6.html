@@ -1,0 +1,126 @@
+<html>
+<head>
+	<title>Цикл While</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<a href = "index.html"><img src="images/p_logo11.png" width="700" height="200"
+	 hspace="100"></a>
+<div class = "column_button">
+	<a target="_blank" href="https://proglib.io/p/top-15-knig-po-python-ot-novichka-do-professionala-2020-04-07" class="button1">Книги по Pyhton</a>
+	<a href="https://www.python.org/downloads/" target="_blank" class="button1">Скачать Python 3</a>
+	<a href="https://www.jetbrains.com/ru-ru/pycharm/" target="_blank" class="button1">Скачать Pycharm</a>
+	<a href="https://ru.wikipedia.org/wiki/Python" target="_blank" class="button1">Статья в Википедии о Python</a>
+	<a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%BD_%D0%A0%D0%BE%D1%81%D1%81%D1%83%D0%BC,_%D0%93%D0%B2%D0%B8%D0%B4%D0%BE"
+	 target="_blank" class="button1">Создатель Python </a>
+</div>
+
+<div class = "column2">
+<h1>Цикл While</h1>
+Программы, которые мы пишем, становятся всё сложнее и объемнее. Они все ещё очень далеки от реальных программ, где количество строк кода измеряется десятками и сотнями тысяч (а иногда и миллионами), но текущая сложность уже способна заставить напрячься людей без опыта. Начиная с этого урока, мы переходим к одной из самых сложных базовых тем в программировании – циклам.<br><br>
+
+Любые прикладные программы служат очень прагматичным целям. Они помогают управлять сотрудниками, финансами, развлекают в конце концов. Несмотря на различия, все эти программы выполняют заложенные в них алгоритмы, которые очень похожи между собой. Что это такое? Алгоритм — это последовательность действий (инструкций), которая приводит нас к некоему ожидаемому результату. В принципе, это описание подходит под любую программу, но под алгоритмами обычно понимается что-то более специфичное.<br><br>
+
+Представьте себе, что у нас есть книга и мы хотим найти внутри неё какую-то конкретную фразу. Саму фразу мы помним, но не знаем, на какой она странице. Как найти нужную страницу? Самый простой (и долгий) способ — последовательно просматривать страницы до тех пор, пока мы не найдем нужную. В худшем случае придется просмотреть все страницы, но результат мы всё равно получим. Именно этот процесс и называется алгоритмом. Он включает в себя логические проверки (нашли ли фразу) и перебор страниц.<br><br> Количество страниц, которое придется посмотреть, заранее не известно, но сам процесс просмотра повторяется из раза в раз совершенно одинаковым образом. Для выполнения повторяющихся действий как раз и нужны циклы. Каждый повтор, в таком случае, называется итерацией.
+
+Напишем функцию с простым циклом, который будет n раз выводить на экран строку <b>'Hello!'</b>:
+
+<div class="column_code">
+	<style type="text/css" scoped="scoped">.slgh,.slgh code,.slgh ul, .slgh ol{margin:0;padding:0;border:0;outline:0;background:none;text-align:left;float:none;vertical-align:baseline;position:static;left:auto;top:auto;right:auto;bottom:auto;height:auto;width:auto;line-height:1.1em;font-family:'Courier New', Courier, monospace;font-weight:normal;font-style:normal;font-size:1em;min-height:inherit;min-height:auto;}.slgh{background:#fff;width:99%;margin:1em 0;padding:1px;position:relative;overflow:auto;overflow-y:hidden;}.slgh ul{list-style:none;margin-left:.5em}.slgh ol{margin-left:3.5em}.slgh .bold {font-weight:bold;}.slgh .italic {font-style:italic;}.slgh .no-wrap li{white-space:pre;}.slgh li{padding-left:.5em;}.slgh li{border-left:3px solid #ccc;color:#666;}.slgh li.alt1{background:#fff;}.slgh li.alt2{background:#F8F8F8;}.slgh .plain, .slgh .plain a{color:#000;}.slgh .comments, .slgh .comments a{color:#008200;}.slgh .string, .slgh .string a{color:blue;}.slgh .keyword{color:#069;font-weight:bold;}.slgh .preprocessor {color:gray;}.slgh .variable{color:#a70;}.slgh .value{color:#090;}.slgh .functions{color:#ff1493;}.slgh .constants{color:#0066CC;}.slgh .script{background:yellow;}.slgh .color1,.slgh .color1 a{color:#808080;}.slgh .color2,.slgh .color2 a{color:#ff1493;}.slgh .color3,.slgh .color3 a{color:red;}.slghcr{margin:-.5em 1.2em}.slghcr a{color:#aaa;background:#fff;text-decoration:none;border-bottom:1px dotted #aaa;font-size:.6em;font-family:arial}</style><div id="hler_244296" class="slgh"><ol class="lines no-wrap"><li class="alt1"><code class="keyword">def</code> <code class="plain">print_hello(n):</code></li><li class="alt2">&nbsp;&nbsp;&nbsp;&nbsp;<code class="plain">counter </code><code class="keyword">=</code> <code class="value">0</code></li><li class="alt1">&nbsp;&nbsp;&nbsp;&nbsp;<code class="keyword">while</code> <code class="plain">counter &lt; n:</code></li><li class="alt2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="functions">print</code><code class="plain">(</code><code class="string">'Hello!'</code><code class="plain">)</code></li><li class="alt1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="plain">counter </code><code class="keyword">=</code> <code class="plain">counter </code><code class="keyword">+</code> <code class="value">1</code></li><li class="alt2">&nbsp;</li><li class="alt1"><code class="plain">print_hello(</code><code class="value">2</code><code class="plain">)</code></li></ol></div><div class="slghcr"></div>
+</div>
+
+<div class="column_console">
+Hello!<br>
+Hello!
+</div>
+
+Теперь подробно проанализируем пример функции с циклом, который выводит на экран числа от 1 до числа-аргумента:
+
+<div class="column_code">
+	<style type="text/css" scoped="scoped">.slgh,.slgh code,.slgh ul, .slgh ol{margin:0;padding:0;border:0;outline:0;background:none;text-align:left;float:none;vertical-align:baseline;position:static;left:auto;top:auto;right:auto;bottom:auto;height:auto;width:auto;line-height:1.1em;font-family:'Courier New', Courier, monospace;font-weight:normal;font-style:normal;font-size:1em;min-height:inherit;min-height:auto;}.slgh{background:#fff;width:99%;margin:1em 0;padding:1px;position:relative;overflow:auto;overflow-y:hidden;}.slgh ul{list-style:none;margin-left:.5em}.slgh ol{margin-left:3.5em}.slgh .bold {font-weight:bold;}.slgh .italic {font-style:italic;}.slgh .no-wrap li{white-space:pre;}.slgh li{padding-left:.5em;}.slgh li{border-left:3px solid #ccc;color:#666;}.slgh li.alt1{background:#fff;}.slgh li.alt2{background:#F8F8F8;}.slgh .plain, .slgh .plain a{color:#000;}.slgh .comments, .slgh .comments a{color:#008200;}.slgh .string, .slgh .string a{color:blue;}.slgh .keyword{color:#069;font-weight:bold;}.slgh .preprocessor {color:gray;}.slgh .variable{color:#a70;}.slgh .value{color:#090;}.slgh .functions{color:#ff1493;}.slgh .constants{color:#0066CC;}.slgh .script{background:yellow;}.slgh .color1,.slgh .color1 a{color:#808080;}.slgh .color2,.slgh .color2 a{color:#ff1493;}.slgh .color3,.slgh .color3 a{color:red;}.slghcr{margin:-.5em 1.2em}.slghcr a{color:#aaa;background:#fff;text-decoration:none;border-bottom:1px dotted #aaa;font-size:.6em;font-family:arial}</style><div id="hler_276682" class="slgh"><ol class="lines no-wrap"><li class="alt1"><code class="plain">print_numbers(</code><code class="value">3</code><code class="plain">)</code></li><li class="alt2"><code class="keyword">/</code><code class="keyword">/</code> <code class="keyword">=</code><code class="plain">&gt; </code><code class="value">1</code></li><li class="alt1"><code class="keyword">/</code><code class="keyword">/</code> <code class="keyword">=</code><code class="plain">&gt; </code><code class="value">2</code></li><li class="alt2"><code class="keyword">/</code><code class="keyword">/</code> <code class="keyword">=</code><code class="plain">&gt; </code><code class="value">3</code></li></ol></div><div class="slghcr"></div>
+</div>
+
+Эту функцию невозможно реализовать уже изученными средствами, так как количество выводов на экран заранее не известно. А с циклами это не составит никаких проблем:
+
+<div class="column_code">
+	<style type="text/css" scoped="scoped">.slgh,.slgh code,.slgh ul, .slgh ol{margin:0;padding:0;border:0;outline:0;background:none;text-align:left;float:none;vertical-align:baseline;position:static;left:auto;top:auto;right:auto;bottom:auto;height:auto;width:auto;line-height:1.1em;font-family:'Courier New', Courier, monospace;font-weight:normal;font-style:normal;font-size:1em;min-height:inherit;min-height:auto;}.slgh{background:#fff;width:99%;margin:1em 0;padding:1px;position:relative;overflow:auto;overflow-y:hidden;}.slgh ul{list-style:none;margin-left:.5em}.slgh ol{margin-left:3.5em}.slgh .bold {font-weight:bold;}.slgh .italic {font-style:italic;}.slgh .no-wrap li{white-space:pre;}.slgh li{padding-left:.5em;}.slgh li{border-left:3px solid #ccc;color:#666;}.slgh li.alt1{background:#fff;}.slgh li.alt2{background:#F8F8F8;}.slgh .plain, .slgh .plain a{color:#000;}.slgh .comments, .slgh .comments a{color:#008200;}.slgh .string, .slgh .string a{color:blue;}.slgh .keyword{color:#069;font-weight:bold;}.slgh .preprocessor {color:gray;}.slgh .variable{color:#a70;}.slgh .value{color:#090;}.slgh .functions{color:#ff1493;}.slgh .constants{color:#0066CC;}.slgh .script{background:yellow;}.slgh .color1,.slgh .color1 a{color:#808080;}.slgh .color2,.slgh .color2 a{color:#ff1493;}.slgh .color3,.slgh .color3 a{color:red;}.slghcr{margin:-.5em 1.2em}.slghcr a{color:#aaa;background:#fff;text-decoration:none;border-bottom:1px dotted #aaa;font-size:.6em;font-family:arial}</style><div id="hler_628922" class="slgh"><ol class="lines no-wrap"><li class="alt1"><code class="keyword">def</code> <code class="plain">print_numbers(last_number):</code></li><li class="alt2">&nbsp;&nbsp;&nbsp;&nbsp;<code class="comments"># i сокращение от index (порядковый номер)</code></li><li class="alt1">&nbsp;&nbsp;&nbsp;&nbsp;<code class="comments"># используется по общему соглашению во множестве языков</code></li><li class="alt2">&nbsp;&nbsp;&nbsp;&nbsp;<code class="comments"># как счетчик цикла</code></li><li class="alt1">&nbsp;&nbsp;&nbsp;&nbsp;<code class="plain">i </code><code class="keyword">=</code> <code class="value">1</code></li><li class="alt2">&nbsp;&nbsp;&nbsp;&nbsp;<code class="keyword">while</code> <code class="plain">i &lt;</code><code class="keyword">=</code> <code class="plain">last_number:</code></li><li class="alt1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="functions">print</code><code class="plain">(i)</code></li><li class="alt2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="plain">i </code><code class="keyword">=</code> <code class="plain">i </code><code class="keyword">+</code> <code class="value">1</code></li><li class="alt1">&nbsp;&nbsp;&nbsp;&nbsp;<code class="functions">print</code><code class="plain">(</code><code class="string">'finished!'</code><code class="plain">)</code></li><li class="alt2">&nbsp;</li><li class="alt1"><code class="plain">print_numbers(</code><code class="value">3</code><code class="plain">)</code></li></ol></div><div class="slghcr"></div>
+</div>
+
+<div class="column_console">
+1<br>
+2<br>
+3<br>
+finished!<br>
+</div>
+Цикл while состоит из трёх элементов:
+
+<ul>
+	<li>Ключевое слово <b>while</b>.</li>
+	<li>Предикат. Условие, которое указывается после  <b>while</b>. Это условие вычисляется на каждой итерации</li>
+	<li>Блок кода (тело цикла).</li>
+</ul>
+
+Каждое выполнение тела называется <b>итерацией</b>. В нашем примере вызов <b>print_numbers(3)</b> породил три итерации, на каждой из которых была выведена на экран переменная <b>i</b>.<br><br>
+Конструкция читается так: «делать то, что указано в теле цикла пока истинно условие (предикат) <b>i <= last_number</b>». Разберём работу этого кода для вызова <b>print_numbers(3)</b>:
+
+<div class="column_code">
+	<style type="text/css" scoped="scoped">.slgh,.slgh code,.slgh ul, .slgh ol{margin:0;padding:0;border:0;outline:0;background:none;text-align:left;float:none;vertical-align:baseline;position:static;left:auto;top:auto;right:auto;bottom:auto;height:auto;width:auto;line-height:1.1em;font-family:'Courier New', Courier, monospace;font-weight:normal;font-style:normal;font-size:1em;min-height:inherit;min-height:auto;}.slgh{background:#fff;width:99%;margin:1em 0;padding:1px;position:relative;overflow:auto;overflow-y:hidden;}.slgh ul{list-style:none;margin-left:.5em}.slgh ol{margin-left:3.5em}.slgh .bold {font-weight:bold;}.slgh .italic {font-style:italic;}.slgh .no-wrap li{white-space:pre;}.slgh li{padding-left:.5em;}.slgh li{border-left:3px solid #ccc;color:#666;}.slgh li.alt1{background:#fff;}.slgh li.alt2{background:#F8F8F8;}.slgh .plain, .slgh .plain a{color:#000;}.slgh .comments, .slgh .comments a{color:#008200;}.slgh .string, .slgh .string a{color:blue;}.slgh .keyword{color:#069;font-weight:bold;}.slgh .preprocessor {color:gray;}.slgh .variable{color:#a70;}.slgh .value{color:#090;}.slgh .functions{color:#ff1493;}.slgh .constants{color:#0066CC;}.slgh .script{background:yellow;}.slgh .color1,.slgh .color1 a{color:#808080;}.slgh .color2,.slgh .color2 a{color:#ff1493;}.slgh .color3,.slgh .color3 a{color:red;}.slghcr{margin:-.5em 1.2em}.slghcr a{color:#aaa;background:#fff;text-decoration:none;border-bottom:1px dotted #aaa;font-size:.6em;font-family:arial}</style><div id="hler_942172" class="slgh"><ol class="lines no-wrap"><li class="alt1"><code class="comments"># Инициализируется i</code></li><li class="alt2"><code class="plain">i </code><code class="keyword">=</code> <code class="value">1</code></li><li class="alt1">&nbsp;</li><li class="alt2"><code class="comments"># Предикат возвращает true, поэтому выполняется тело цикла</code></li><li class="alt1"><code class="keyword">while</code> <code class="value">1</code> <code class="plain">&lt;</code><code class="keyword">=</code> <code class="value">3</code></li><li class="alt2"><code class="comments"># print(1)</code></li><li class="alt1"><code class="comments"># i = 1 + 1</code></li><li class="alt2">&nbsp;</li><li class="alt1"><code class="comments"># Закончилось тело цикла, поэтому происходит возврат в начало</code></li><li class="alt2"><code class="keyword">while</code> <code class="value">2</code> <code class="plain">&lt;</code><code class="keyword">=</code> <code class="value">3</code></li><li class="alt1"><code class="comments"># print(2)</code></li><li class="alt2"><code class="comments"># i = 2 + 1</code></li><li class="alt1">&nbsp;</li><li class="alt2"><code class="comments"># Закончилось тело цикла, поэтому происходит возврат в начало</code></li><li class="alt1"><code class="keyword">while</code> <code class="value">3</code> <code class="plain">&lt;</code><code class="keyword">=</code> <code class="value">3</code></li><li class="alt2"><code class="comments"># print(3)</code></li><li class="alt1"><code class="comments"># i = 3 + 1</code></li><li class="alt2">&nbsp;</li><li class="alt1"><code class="comments"># Предикат возвращает false, поэтому выполнение переходит за цикл</code></li><li class="alt2"><code class="keyword">while</code> <code class="value">4</code> <code class="plain">&lt;</code><code class="keyword">=</code> <code class="value">3</code></li><li class="alt1">&nbsp;</li><li class="alt2"><code class="comments"># print('finished!');</code></li><li class="alt1"><code class="comments"># На этом этапе i равен 4, но он нам уже не нужен</code></li><li class="alt2"><code class="comments"># функция завершается</code></li></ol></div><div class="slghcr"></div>
+</div>
+Самое главное в цикле — завершение (выход). Процесс, который порождает цикл, должен в конце концов остановится. Ответственность за остановку полностью лежит на программисте.<br><br>
+Обычно задача сводится к введению переменной, называемой «счётчиком цикла». Сначала он инициализируется, то есть ему задаётся начальное значение. В нашем примере это строчка i = 1. Затем в условии цикла проверяется, не достиг ли счётчик своего предельного значения.<br><br>
+
+В нашем примере предельное значение определяется аргументом функции. Если условие цикла не выполнено, то тело не выполняется и интерпретатор двигается дальше, выполняя инструкции после цикла. Но если условие цикла истинно, то выполняется тело, в котором находится ключевой элемент остановки — изменение счетчика. Обычно его делают в конце тела, и это изменение — одно из редких мест, где невозможно обойтись без переменной. В нашем примере за изменение отвечает строчка i = i + 1.<br><br>
+
+На этом моменте новички делают больше всего ошибок. Например, случайно забытое увеличение счётчика или неправильная проверка в предикате способны привести к зацикливанию. Это ситуация, при которой цикл работает бесконечно и программа никогда не останавливается. В таком случае приходится её завершать принудительно (кто знает, может быть когда зависают реальные программы, в этот момент внутри них выполняется бесконечный цикл).<br><br>
+
+<div class="column_code">
+	<style type="text/css" scoped="scoped">.slgh,.slgh code,.slgh ul, .slgh ol{margin:0;padding:0;border:0;outline:0;background:none;text-align:left;float:none;vertical-align:baseline;position:static;left:auto;top:auto;right:auto;bottom:auto;height:auto;width:auto;line-height:1.1em;font-family:'Courier New', Courier, monospace;font-weight:normal;font-style:normal;font-size:1em;min-height:inherit;min-height:auto;}.slgh{background:#fff;width:99%;margin:1em 0;padding:1px;position:relative;overflow:auto;overflow-y:hidden;}.slgh ul{list-style:none;margin-left:.5em}.slgh ol{margin-left:3.5em}.slgh .bold {font-weight:bold;}.slgh .italic {font-style:italic;}.slgh .no-wrap li{white-space:pre;}.slgh li{padding-left:.5em;}.slgh li{border-left:3px solid #ccc;color:#666;}.slgh li.alt1{background:#fff;}.slgh li.alt2{background:#F8F8F8;}.slgh .plain, .slgh .plain a{color:#000;}.slgh .comments, .slgh .comments a{color:#008200;}.slgh .string, .slgh .string a{color:blue;}.slgh .keyword{color:#069;font-weight:bold;}.slgh .preprocessor {color:gray;}.slgh .variable{color:#a70;}.slgh .value{color:#090;}.slgh .functions{color:#ff1493;}.slgh .constants{color:#0066CC;}.slgh .script{background:yellow;}.slgh .color1,.slgh .color1 a{color:#808080;}.slgh .color2,.slgh .color2 a{color:#ff1493;}.slgh .color3,.slgh .color3 a{color:red;}.slghcr{margin:-.5em 1.2em}.slghcr a{color:#aaa;background:#fff;text-decoration:none;border-bottom:1px dotted #aaa;font-size:.6em;font-family:arial}</style><div id="hler_30395" class="slgh"><ol class="lines no-wrap"><li class="alt1"><code class="keyword">def</code> <code class="plain">print_numbers(last_number):</code></li><li class="alt2">&nbsp;&nbsp;&nbsp;&nbsp;<code class="plain">i </code><code class="keyword">=</code> <code class="value">1</code></li><li class="alt1">&nbsp;&nbsp;&nbsp;&nbsp;<code class="comments"># Этот цикл никогда не остановится</code></li><li class="alt2">&nbsp;&nbsp;&nbsp;&nbsp;<code class="comments"># и будет печатать всегда одно значение</code></li><li class="alt1">&nbsp;&nbsp;&nbsp;&nbsp;<code class="keyword">while</code> <code class="plain">i &lt;</code><code class="keyword">=</code> <code class="plain">last_number:</code></li><li class="alt2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="functions">print</code><code class="plain">(i)</code></li><li class="alt1">&nbsp;&nbsp;&nbsp;&nbsp;<code class="functions">print</code><code class="plain">(</code><code class="string">'finished!'</code><code class="plain">)</code></li></ol></div><div class="slghcr"></div>
+</div>
+В некоторых случаях бесконечные циклы полезны. Здесь мы такие случаи не рассматриваем, но полезно видеть как выглядит этот код:
+<div class="column_code">
+	<style type="text/css" scoped="scoped">.slgh,.slgh code,.slgh ul, .slgh ol{margin:0;padding:0;border:0;outline:0;background:none;text-align:left;float:none;vertical-align:baseline;position:static;left:auto;top:auto;right:auto;bottom:auto;height:auto;width:auto;line-height:1.1em;font-family:'Courier New', Courier, monospace;font-weight:normal;font-style:normal;font-size:1em;min-height:inherit;min-height:auto;}.slgh{background:#fff;width:99%;margin:1em 0;padding:1px;position:relative;overflow:auto;overflow-y:hidden;}.slgh ul{list-style:none;margin-left:.5em}.slgh ol{margin-left:3.5em}.slgh .bold {font-weight:bold;}.slgh .italic {font-style:italic;}.slgh .no-wrap li{white-space:pre;}.slgh li{padding-left:.5em;}.slgh li{border-left:3px solid #ccc;color:#666;}.slgh li.alt1{background:#fff;}.slgh li.alt2{background:#F8F8F8;}.slgh .plain, .slgh .plain a{color:#000;}.slgh .comments, .slgh .comments a{color:#008200;}.slgh .string, .slgh .string a{color:blue;}.slgh .keyword{color:#069;font-weight:bold;}.slgh .preprocessor {color:gray;}.slgh .variable{color:#a70;}.slgh .value{color:#090;}.slgh .functions{color:#ff1493;}.slgh .constants{color:#0066CC;}.slgh .script{background:yellow;}.slgh .color1,.slgh .color1 a{color:#808080;}.slgh .color2,.slgh .color2 a{color:#ff1493;}.slgh .color3,.slgh .color3 a{color:red;}.slghcr{margin:-.5em 1.2em}.slghcr a{color:#aaa;background:#fff;text-decoration:none;border-bottom:1px dotted #aaa;font-size:.6em;font-family:arial}</style><div id="hler_660879" class="slgh"><ol class="lines no-wrap"><li class="alt1"><code class="keyword">while</code> <code class="color1">True</code><code class="plain">:</code></li><li class="alt2">&nbsp;&nbsp;&nbsp;&nbsp;<code class="comments"># Что-то делаем</code></li></ol></div><div class="slghcr"></div>
+</div>
+Подводя итог. Когда всё же нужны циклы, а когда можно обойтись без них? Физически невозможно обойтись без циклов тогда, когда алгоритм решения задачи требует повторения каких-то действий, как в примере с книгой, и количество этих операций заранее неизвестно.
+<h3>Задание</h3>
+Модифицируйте функцию print_numbers(), так, чтобы она выводила числа в обратном порядке. Для этого нужно идти от верхней границы к нижней. То есть, счетчик должен быть инициализирован максимальным значением, а в теле цикла его нужно уменьшать до нижней границы.
+
+Пример вызова и вывода:
+<div class="column_code">
+	<style type="text/css" scoped="scoped">.slgh,.slgh code,.slgh ul, .slgh ol{margin:0;padding:0;border:0;outline:0;background:none;text-align:left;float:none;vertical-align:baseline;position:static;left:auto;top:auto;right:auto;bottom:auto;height:auto;width:auto;line-height:1.1em;font-family:'Courier New', Courier, monospace;font-weight:normal;font-style:normal;font-size:1em;min-height:inherit;min-height:auto;}.slgh{background:#fff;width:99%;margin:1em 0;padding:1px;position:relative;overflow:auto;overflow-y:hidden;}.slgh ul{list-style:none;margin-left:.5em}.slgh ol{margin-left:3.5em}.slgh .bold {font-weight:bold;}.slgh .italic {font-style:italic;}.slgh .no-wrap li{white-space:pre;}.slgh li{padding-left:.5em;}.slgh li{border-left:3px solid #ccc;color:#666;}.slgh li.alt1{background:#fff;}.slgh li.alt2{background:#F8F8F8;}.slgh .plain, .slgh .plain a{color:#000;}.slgh .comments, .slgh .comments a{color:#008200;}.slgh .string, .slgh .string a{color:blue;}.slgh .keyword{color:#069;font-weight:bold;}.slgh .preprocessor {color:gray;}.slgh .variable{color:#a70;}.slgh .value{color:#090;}.slgh .functions{color:#ff1493;}.slgh .constants{color:#0066CC;}.slgh .script{background:yellow;}.slgh .color1,.slgh .color1 a{color:#808080;}.slgh .color2,.slgh .color2 a{color:#ff1493;}.slgh .color3,.slgh .color3 a{color:red;}.slghcr{margin:-.5em 1.2em}.slghcr a{color:#aaa;background:#fff;text-decoration:none;border-bottom:1px dotted #aaa;font-size:.6em;font-family:arial}</style><div id="hler_895409" class="slgh"><ol class="lines no-wrap"><li class="alt1"><code class="plain">print_numbers(</code><code class="value">4</code><code class="plain">)</code></li></ol></div><div class="slghcr"></div>
+</div>
+
+<div class="column_console">
+4<br>
+3<br>
+2<br>
+1<br>
+finished!
+</div>
+
+</div>
+
+
+<div class = "column3">
+	<h2> Новости из мира Python </h2>
+	<ul>
+		<li><a target="_blank" href = "https://vc.ru/s/welltory/323936-senior-python-developer-dsl">Senior Python Developer (DS)<br></a></li>
+		<li><a target="_blank" href = "https://vc.ru/s/welltory/323850-senior-python-developer">Senior Python Developer в команду Newsfeed<br></a></li>
+		<li><a target="_blank" href = "https://vc.ru/newtechaudit/326581-kornia-python-biblioteka-dlya-obrabotki-izobrazheniy-v-zadachah-cv">Kornia - Python библиотека для обработки изображений<br> </a></li>
+		<li><a target="_blank" href = "https://tproger.ru/events/intensiv-chat-bot-s-iskusstvennym-intellektom-na-python-11/">Интенсив «Чат-бот с искусственным интеллектом на Python»<br></a></li>
+		<li><a target="_blank" href = "https://tproger.ru/events/intensiv-chat-bot-s-iskusstvennym-intellektom-na-python-11/">Python: The Programming and Development Language of the Future<br></a></li>
+		<li><a target="_blank" href = "https://www.nature.com/articles/d41586-021-03628-7">Python power-up: new image tool visualizes complex data<br></a></li>
+		<li><a target="_blank"href = "https://www.securitylab.ru/news/527449.phpl">PyPI отключил три вредоносных пакета с почти 15 тыс. скачиваний<br></a></li>
+		<li><a target="_blank" href = "https://www.cnews.ru/news/line/2021-12-13_vtb_lizing_planiruet_uvelichit">ВТБ Лизинг планирует увеличить штат IT-специалистов на 50%<br></a></li>
+	</ul>
+</div>
+
+<div class = "column_bottom">
+2021-2021. All rights reserved.
+</div>
+
+</body>
+</html>
