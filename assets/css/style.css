@@ -4,12 +4,12 @@ body {
   background: linear-gradient(to bottom, white, #B0C4DE);
   color: #C4E1DE; /* Цвет основного текста */
 }
+
 h1 {
   color: #a52a2a; /* Цвет заголовка */
   font-size: 24pt; /* Размер шрифта в пунктах */
-  font-family: Georgia, Times, serif; /* Семейство шрифтов */
+  font-family: Bahnschrift, Times, serif; /* Семейство шрифтов */
   font-weight: normal; /* Нормальное начертание текста  */
-  border-bottom: 1px solid currentColor;
   text-align: center;
   color: black;
 }
@@ -82,24 +82,6 @@ a:link {
   left: auto;
 }
 
-.column_bottom {
-	width: 1000px;
-  background-color: #A9A9A9;
-  padding: 5px;
-  padding-right: 20px;
-  padding-bottom: 50px;
-  padding-left: 25px;
-  margin-left:200px;
-  float: middle;
-	color: #A9A9A9; /* Цвет основного текста */
-	font-family: Times New Roman;
-	font-size: 16pt;
-	line-height: 1.5;
-  position: relative;
-  top: auto;
-  left: auto;
-}
-
 .column3 {
 	width: 400px;
   background: white;
@@ -120,7 +102,7 @@ a:link {
 .column_button {
 	width: 1000px;
   height: 31px;
-  background: #00BFFF;
+  background: #90A0B4;
   padding: 5px;
   padding-right: 520px;
   padding-top: 13px;
@@ -179,16 +161,16 @@ a.button1 {
 	color: white;
 	text-decoration: none;
 	padding: .8em 1em calc(.8em + 3px);
-	background: #696969;
+	background: #90A0B4;
 	transition: 0.2s;
 }
-a.button1:hover { background: #00a5dc; }
+a.button1:hover { background: #808080; }
 a.button1:active {
   background: #0082ad);
 }
 
 ul {
-    list-style-image: url(images/p_logo_s2.png);
+    list-style-image: url(assets\img\cam_s.png);
 }
 
 ol.list_code {
@@ -202,4 +184,27 @@ ol.list_code {
 }
 b {
   color: #C71585;
+}
+
+.thumb img {
+	padding: 10px; /* Расстояние от картинки до рамки */
+	margin-right: 70px; /* Отступ справа */
+	margin-bottom: 10px; /* Отступ снизу */
+}
+
+.column_img {
+  background: white;
+  padding: 5px;
+  padding-right: 20px;
+  padding-bottom: 300px;
+  padding-left: 25px;
+  margin-left:200px;
+  float: middle;
+	color: #5e5e5e; /* Цвет основного текста */
+	font-family: Times New Roman;
+	font-size: 16pt;
+	line-height: 1.5;
+  position: relative;
+  top: 60px;
+  left: auto;
 }
